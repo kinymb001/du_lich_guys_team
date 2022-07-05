@@ -71,8 +71,6 @@ foreach($_SESSION['cart'] as $item) {
 		}, function() {
 			window.open('complete.php', '_self');
 		})
-
-		//return false;
 	}
 </script>
 <?php
