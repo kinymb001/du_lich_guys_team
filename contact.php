@@ -4,7 +4,6 @@
 
 <?php 
 require_once('layouts/header.php');
-// var_dump($_POST);
 if(!empty($_POST)) {
 	$first_name = getPost('first_name');
 	$last_name = getPost('last_name');
@@ -15,7 +14,6 @@ if(!empty($_POST)) {
 	$created_at = $updated_at = date('Y-m-d H:i:s');
 
 	$sql = "insert into FeedBack(firstname, lastname, email, phone_number, subject_name, note, status, created_at, updated_at) values('$first_name', '$last_name', '$email', '$phone_number', '$subject_name', '$note', 0, '$created_at', '$updated_at')";
-	// echo $sql;
 	execute($sql);
 }
 ?>
